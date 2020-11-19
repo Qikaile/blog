@@ -934,7 +934,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Thu Nov 19 2020 12:04:01 GMT+0800 (GMT+08:00)</div>
+            <div id="last-update" style="display: none;">Thu Nov 19 2020 12:06:45 GMT+0800 (GMT+08:00)</div>
             <div id="last-update-show">2020-11-19 日</div>
           
         </div>
@@ -1099,7 +1099,7 @@
 <p>Office 365 开发版 E5最大可以支持25个订阅者，每一个订阅者都可以获得5T的OneDrive网盘。（后期还可以扩展到25T）</p>
 <p><img src="https://vpswp.com/wp-content/uploads/2020/03/2020031006391310.png" class="lazyload" data-srcset="https://vpswp.com/wp-content/uploads/2020/03/2020031006391310.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
 <h2 id="准备："><a href="#准备：" class="headerlink" title="准备："></a>准备：</h2><p>一个微软账号，如果没有，点击下面，注册outlook邮箱就可以了。<a target="_blank" rel="noopener" href="https://outlook.live.com/owa/">https://outlook.live.com/owa/</a></p>
-<p>账号格式：<a href="mailto:&#120;&#x78;&#120;&#x40;&#111;&#x75;&#116;&#x6c;&#111;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;">&#120;&#x78;&#120;&#x40;&#111;&#x75;&#116;&#x6c;&#111;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;</a> 或者 xxx @hotmail.com</p>
+<p>账号格式：<a href="mailto:&#x78;&#120;&#120;&#64;&#x6f;&#x75;&#116;&#108;&#x6f;&#111;&#x6b;&#46;&#x63;&#111;&#109;">&#x78;&#120;&#120;&#64;&#x6f;&#x75;&#116;&#108;&#x6f;&#111;&#x6b;&#46;&#x63;&#111;&#109;</a> 或者 xxx @hotmail.com</p>
 <h2 id="申请教程"><a href="#申请教程" class="headerlink" title="申请教程"></a>申请教程</h2><ol>
 <li><p>首先进入【Office开发人员中心】<a target="_blank" rel="noopener" href="https://developer.microsoft.com/zh-cn/office">https://developer.microsoft.com/zh-cn/office</a> 登录你的微软帐号之后，点击立即加入<br><img src="https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/2020.11.15.2.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/Qikaile/cdn/img/2020.11.15.2.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
 </li>
@@ -1121,7 +1121,7 @@
 <p>下载 SharePoint Online Management Shell 并安装<br><a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/download/details.aspx?id=35588">https://www.microsoft.com/zh-cn/download/details.aspx?id=35588</a></p>
 <p>运行代码检测安装是否成功<br>Get-Module -Name Microsoft.Online.SharePoint.PowerShell -ListAvailable | Select Name,Version</p>
 <p>使用管理员用户名和密码连接，运行如下代码：</p>
-<p>1、$adminUPN=”<a href="mailto:&#84;&#x4a;&#89;&#x53;&#64;&#113;&#x69;&#x6b;&#97;&#x69;&#108;&#101;&#46;&#x6f;&#x6e;&#109;&#x69;&#99;&#114;&#x6f;&#x73;&#111;&#102;&#116;&#46;&#99;&#x6f;&#x6d;">&#84;&#x4a;&#89;&#x53;&#64;&#113;&#x69;&#x6b;&#97;&#x69;&#108;&#101;&#46;&#x6f;&#x6e;&#109;&#x69;&#99;&#114;&#x6f;&#x73;&#111;&#102;&#116;&#46;&#99;&#x6f;&#x6d;</a>“</p>
+<p>1、$adminUPN=”<a href="mailto:&#x54;&#74;&#89;&#x53;&#64;&#113;&#105;&#107;&#97;&#x69;&#x6c;&#101;&#46;&#111;&#110;&#109;&#105;&#x63;&#x72;&#111;&#x73;&#x6f;&#102;&#116;&#x2e;&#99;&#111;&#109;">&#x54;&#74;&#89;&#x53;&#64;&#113;&#105;&#107;&#97;&#x69;&#x6c;&#101;&#46;&#111;&#110;&#109;&#105;&#x63;&#x72;&#111;&#x73;&#x6f;&#102;&#116;&#x2e;&#99;&#111;&#109;</a>“</p>
 <p>2、$orgName=”qikaile”</p>
 <p>3、$userCredential = Get-Credential -UserName $adminUPN -Message “Type the password.”</p>
 <p>4、Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential</p>
